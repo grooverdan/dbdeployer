@@ -1,3 +1,7 @@
 *~
 .idea/
+dbdeployer-*.linux*.tar.gz
+dbdeployer-*.osx.tar.gz
+dbdeployer-*.linux*
+dbdeployer-*.osx
 
