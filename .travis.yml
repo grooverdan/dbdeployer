@@ -11,6 +11,9 @@ env:
   - TARGET=linux-arm64
   - TARGET=linux-s390x
 
+install:
+  - true
+
 script:
   - ARCH=${TARGET#*-}
   - GOOS=${TARGET%%-*} ${ARCH:+GOARCH=${ARCH}} go build
