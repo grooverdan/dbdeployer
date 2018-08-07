@@ -16,7 +16,7 @@ install:
 
 script:
   - ARCH=${TARGET#*-}
-  - GOOS=${TARGET%%-*} ${ARCH:+GOARCH=${ARCH}} go build
+  - env GOOS=${TARGET%%-*} ${ARCH:+GOARCH=${ARCH}} go build
 
 before_deploy:
   - ./build.sh ${TARGET} ${TRAVIS_TAG}
