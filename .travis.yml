@@ -1,0 +1,29 @@
+language: go
+
+go:
+  - 1.9.x
+  - 1.10.x
+  - master
+
+env:
+  - TARGET=osx
+  - TARGET=linux
+  - TARGET=linux-ppc64le
+  - TARGET=linux-arm64
+  - TARGET=linux-s390x
+
+script:
+  - ARCH=${TARGET#*-}
+  - GOOS=${TARGET%%-*} ${ARCH:+GOARCH=${ARCH}} go build
+
+before_deploy:
+  - ./build.sh ${TARGET} ${TRAVIS_TAG}
+  - MKDOCS=1 ./build.sh ${TARGET} ${TRAVIS_TAG}
+
+deploy:
+  provider: releases
+  api_key: "GITHUB OAUTH TOKEN"
+  file: "dbdeployer-${TRAVIS_TAG}*.$TARGET.tar.gz"
+  skip_cleanup: true
+  on:
+    tags: true
