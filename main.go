@@ -16,8 +16,8 @@
 package main
 
 import (
-	"github.com/datacharmer/dbdeployer/abbreviations"
-	"github.com/datacharmer/dbdeployer/cmd"
+	"github.com/grooverdan/dbdeployer/abbreviations"
+	"github.com/grooverdan/dbdeployer/cmd"
 )
 
 func main() {

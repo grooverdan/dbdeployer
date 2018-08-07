@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"log"
 	//"os"
-	"github.com/datacharmer/dbdeployer/common"
+	"github.com/grooverdan/dbdeployer/common"
 	"github.com/spf13/cobra"
 	"io/ioutil"
 )

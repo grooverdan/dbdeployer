@@ -43,7 +43,7 @@ import (
 	"path"
 	"strconv"
 	"strings"
-	"github.com/datacharmer/dbdeployer/common"
+	"github.com/grooverdan/dbdeployer/common"
 )
 
 const (

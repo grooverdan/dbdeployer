@@ -17,8 +17,8 @@ package sandbox
 
 import (
 	"fmt"
-	"github.com/datacharmer/dbdeployer/common"
-	"github.com/datacharmer/dbdeployer/defaults"
+	"github.com/grooverdan/dbdeployer/common"
+	"github.com/grooverdan/dbdeployer/defaults"
 	"regexp"
 	"strconv"
 	"strings"

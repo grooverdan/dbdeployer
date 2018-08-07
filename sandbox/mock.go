@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/datacharmer/dbdeployer/common"
-	"github.com/datacharmer/dbdeployer/defaults"
+	"github.com/grooverdan/dbdeployer/common"
+	"github.com/grooverdan/dbdeployer/defaults"
 	"runtime"
 )
 

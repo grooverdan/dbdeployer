@@ -22,7 +22,7 @@ import (
 	"strings"
 	"github.com/spf13/cobra"
 	"github.com/spf13/cobra/doc"
-	"github.com/datacharmer/dbdeployer/common"
+	"github.com/grooverdan/dbdeployer/common"
 )
 
 func WriteApi(show_hidden bool) {

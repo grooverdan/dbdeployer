@@ -18,7 +18,7 @@ package defaults
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/datacharmer/dbdeployer/common"
+	"github.com/grooverdan/dbdeployer/common"
 	"os"
 	"strconv"
 	"strings"

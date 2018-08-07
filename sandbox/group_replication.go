@@ -21,9 +21,9 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/datacharmer/dbdeployer/common"
-	"github.com/datacharmer/dbdeployer/concurrent"
-	"github.com/datacharmer/dbdeployer/defaults"
+	"github.com/grooverdan/dbdeployer/common"
+	"github.com/grooverdan/dbdeployer/concurrent"
+	"github.com/grooverdan/dbdeployer/defaults"
 )
 
 const (

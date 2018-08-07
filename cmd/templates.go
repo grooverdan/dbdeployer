@@ -19,9 +19,9 @@ import (
 	"fmt"
 	"os"
 	"strings"
-	"github.com/datacharmer/dbdeployer/common"
-	"github.com/datacharmer/dbdeployer/defaults"
-	"github.com/datacharmer/dbdeployer/sandbox"
+	"github.com/grooverdan/dbdeployer/common"
+	"github.com/grooverdan/dbdeployer/defaults"
+	"github.com/grooverdan/dbdeployer/sandbox"
 	"github.com/spf13/cobra"
 )
 
