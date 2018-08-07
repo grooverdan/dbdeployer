@@ -72,7 +72,7 @@ fi
 if [ -z "$version" ]
 then
     echo "Syntax: target  version"
-    echo "      target: (linux | OSX) "
+    echo "      target: (linux | linux-\$arch | OSX) "
     echo "Set the variable MKDOCS to build the docs-enabled dbdeployer (see README.md)"
     exit 1
 fi
@@ -93,6 +93,13 @@ case $target in
         executable=dbdeployer-${version}${docs_tag}.linux
         (set -x
 	    env GOOS=linux GOARCH=386 go build $docs_flags -o $executable .
+        )
+        tar -c $executable | gzip -c > ${executable}.tar.gz
+    ;;
+    linux-*)
+        executable=dbdeployer-${version}${docs_tag}.${target}
+        (set -x
+	    env GOOS=linux GOARCH=${target#linux-} go build $docs_flags -o $executable .
         )
         tar -c $executable | gzip -c > ${executable}.tar.gz
     ;;
